@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Солодчук](https://up.htmlacademy.ru/htmlcss-individual/1/user/2357681).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx) .
 
 ---
 
