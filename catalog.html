@@ -31,8 +31,8 @@
           </a>
         </li>
         <li class="navigation item">
-            <button type="button navigation-button">Хочу сюда!</button>
-          </li>
+          <button class="button navigation-button" type="button">Хочу сюда!</button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -41,7 +41,7 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-img" src="" alt="Главная страница"></a>
+          <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-img" src="#" alt="Главная страница"></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -133,47 +133,50 @@
   <ul class="product-list">
     <li class="product-card">
       <a class="product-card-link" href="product.html">
-        <img class="product-card-image" src="" alt="Промо Amara Resort & Spa">
+        <img class="product-card-image" src="#" alt="Промо Amara Resort & Spa">
         <h3>Amara Resort & Spa</h3></a>
         <span class="product-type">Гостиница</span>
         <span class="product-price">От 4000 ₽</span>
         <a class="product-card-button-details" href="#">Подробнее</a>
         <button class="product-card-button-select">В избранное</button>
-        <!--кнопку уже в избранном размечаем тоже html, а потом просто средствами css меняем же?-->
-        <span class="classification"></span> <!--звезды средствами css или картинками?-->
+        <button class="product-card-button-select-active">В избранном</button>
+        <span class="classification visually-hidden">4 звезды</span>
         <span class="rating">Рейтинг: 8,5</span>
     </li>
     <li class="product-card">
       <a class="product-card-link" href="product.html">
-        <img class="product-card-image" src="" alt="Промо Villas at Poco Diablo">
+        <img class="product-card-image" src="#" alt="Промо Villas at Poco Diablo">
         <h3>Villas at Poco Diablo</h3></a>
         <span class="product-type">Гостиница</span>
         <span class="product-price">От 5000 ₽</span>
         <a class="product-card-button-details" href="#">Подробнее</a>
         <button class="product-card-button-select">В избранное</button>
-        <span class="classification"></span>
+        <button class="product-card-button-select-active">В избранном</button>
+        <span class="classification visually-hidden">4 звезды</span>
         <span class="rating">Рейтинг: 9,2</span>
     </li>
     <li class="product-card">
       <a class="product-card-link" href="product.html">
-        <img class="product-card-image" src="" alt="Промо Desert Quail Inn">
+        <img class="product-card-image" src="#" alt="Промо Desert Quail Inn">
         <h3>Desert Quail Inn</h3></a>
         <span class="product-type">Гостиница</span>
         <span class="product-price">От 2500 ₽</span>
         <a class="product-card-button-details" href="#">Подробнее</a>
         <button class="product-card-button-select">В избранное</button>
-        <span class="classification"></span>
+        <button class="product-card-button-select-active">В избранном</button>
+        <span class="classification visually-hidden">3 звезды</span>
         <span class="rating">Рейтинг: 6,9</span>
     </li>
     <li class="product-card">
       <a class="product-card-link" href="product.html">
-        <img class="product-card-image" src="" alt="Промо GreenTree Inn">
+        <img class="product-card-image" src="#" alt="Промо GreenTree Inn">
         <h3>GreenTree Inn</h3></a>
         <span class="product-type">Гостиница</span>
         <span class="product-price">От 1500 ₽</span>
         <a class="product-card-button-details" href="#">Подробнее</a>
         <button class="product-card-button-select">В избранное</button>
-        <span class="classification"></span>
+        <button class="product-card-button-select-active">В избранном</button>
+        <span class="classification visually-hidden">2 звезды</span>
         <span class="rating">Рейтинг: 5,0</span>
     </li>
   </ul>
@@ -215,15 +218,15 @@
       <ul class="socials-list">
         <li class="socials-item">
           <h3 class="socials-title">Ссылка на Вконтакте</h3>
-          <a class="socials-link" href="https://vk.com/htmlacademy"><img class="socials-img" src="" alt="Vkontakte"></a>
+          <a class="socials-link" href="https://vk.com/htmlacademy"><img class="socials-img" src="#" alt="Vkontakte"></a>
         </li>
         <li class="socials-item">
           <h3 class="socials-title">Ссылка на Телеграм</h3>
-          <a class="socials-link" href="https://t.me/htmlacademy"><img class="socials-img" src="" alt="Telegram"></a>
+          <a class="socials-link" href="https://t.me/htmlacademy"><img class="socials-img" src="#" alt="Telegram"></a>
         </li>
         <li class="socials-item">
           <h3 class="socials-title">Ссылка на Ютуб</h3>
-          <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru"><img class="socials-img" src="" alt="Youtube"></a>
+          <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru"><img class="socials-img" src="#" alt="Youtube"></a>
         </li>
       </ul>
     </section>
@@ -231,7 +234,7 @@
       <h2 class="visually-hidden">Телефон для связи</h2>
       <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
     </section>
-    <a class="footer-logo-link" href="https://htmlacademy.ru/"><img class="footer-logo" src="" alt="Логотип HTML Academy"></a>
+    <a class="footer-logo-link" href="https://htmlacademy.ru/"><img class="footer-logo" src="#" alt="Логотип HTML Academy"></a>
   </footer>
 </body>
 </html>
