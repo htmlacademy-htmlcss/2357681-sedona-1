@@ -83,6 +83,10 @@ background-color: #ffffff;
   background-color: #7DB54F;
 }
 
+.button-reset {
+  background-color: rgba(28,28,28,0);
+}
+
 .hero-logo-group {
   background: #83B3D333 url("../images/pictures/mountains_hero_background.jpg") no-repeat;
   background-size: 1200px 485px;
@@ -169,6 +173,16 @@ color: #FFFFFF;
   list-style: none;
 }
 
+.inner-header {
+  background-color: #756157;
+}
+
+/*как мне сделать один фон и дл шапки, и для фильтров?*/
+
+.catalog-products {
+  background-color: #756157;
+}
+
 .inner-header-title {
   font-size: 60px;
   font-weight: 700;
@@ -219,10 +233,75 @@ color: #FFFFFF;
   color: #FFFFFF;
 }
 
-.button-reset {
-  background-color: rgba(28,28,28,0);
+.found-hotels {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
-.main-inner {
-  background-color: #756157;
+.product-list {
+  list-style: none;
+}
+
+.product-name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.product-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-type {
+  color: #333333;
+}
+
+.product-price {
+  color: #333333;
+}
+
+.rating {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #F2F2F2;
+  }
+
+.classification {
+  background: url("../images/icons/star_blue.svg") no-repeat;
+  /*не понимаю, как повторять звездочки нужное количество раз*/
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-inactive {
+  color: #000000;
+  background-color: #FFFFFF;
 }
