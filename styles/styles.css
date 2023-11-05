@@ -132,3 +132,35 @@ background-color: #ffffff;
   background-color: rgba(131, 179, 211, 0.20);
 }
 /*цвет должен быть слегка разным, а он одинаковый, или?..*/
+
+.newsletter-title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.newsletter-title-white {
+color: #FFFFFF;
+}
+
+.newsletter-description {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+}
+
+.newsletter-description-white {
+  color: #FFFFFF;
+}
+
+.newsletter-background {
+  background: #756157 url("../images/pictures/newsletter_main_background.jpg") no-repeat;
+  background-size: 1200px 415px;
+  width: 1200px;
+  height: 415px;
+}
