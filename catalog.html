@@ -43,7 +43,12 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-img" src="images/icons/breadcrumbs/breadcrumbs_home.svg" alt="Главная страница"></a>
+          <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+            <span class="visually-hidden">Главная страница</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item arrow">
+          <span class="visually-hidden">Переход</span>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -107,10 +112,10 @@
           <label class="price">
             <input type="number" name="price-max" min="0" max="9000" value="9000" required>до
           </label>
-          <input type="range" min="0" max="9000" step="500" value="4500">
+          <input class="range" type="range" min="0" max="9000" step="500" value="4500">
         </fieldset>
         <button class="button button-additional" type="submit">Применить</button>
-        <button class="button-reset" type="reset">Сбросить</button>
+        <button class="button button-reset" type="reset">Сбросить</button>
       </form>
     </section>
     <h2 class="found-hotels">Найдено гостиниц: 38</h2>
@@ -202,7 +207,7 @@
     </ol>
   </main>
   <footer class="main-footer">
-    <section class="newsletter-inner">
+    <section class="newsletter">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
