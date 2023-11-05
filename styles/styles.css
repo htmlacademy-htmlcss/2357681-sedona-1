@@ -56,14 +56,31 @@ background-color: #ffffff;
   background: url("../images/icons/navigation/select.svg") 20px no-repeat;
 }
 
-.navigation-button {
+.button {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.button-base {
   background-color: #756157;
+}
+
+.button-base-big {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-additional {
+  background-color: #82B3D3;
+}
+
+.active {
+  background-color: #7DB54F;
 }
 
 .hero-logo-group {
