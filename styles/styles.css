@@ -17,6 +17,51 @@
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height:21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
 }
-/*! стоит ли в body указывать font-size и line-height, если на странице много разного текста и почти нет больших кусков?*/
+
+.main-header {
+color: #000000;
+background-color: #ffffff;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-search {
+  background: url("../images/icons/navigation/search.svg") 18px no-repeat;
+}
+
+.navigation-select {
+  background: url("../images/icons/navigation/select.svg") 20px no-repeat;
+}
+
+.navigation-button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+
+}
