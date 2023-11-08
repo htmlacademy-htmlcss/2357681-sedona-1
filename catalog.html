@@ -39,11 +39,11 @@
     </nav>
   </header>
   <main class="main-inner">
-    <header class="inner-header">
-      <h1 class="inner-header-title">Гостиницы Седоны</h1>
+    <section class="catalog">
+      <h1 class="catalog-title">Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+        <li class="breadcrumbs-item breadcrumbs-link-home">
+          <a class="breadcrumbs-link" href="index.html">
             <span class="visually-hidden">Главная страница</span>
           </a>
         </li>
@@ -54,8 +54,7 @@
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ol>
-    </header>
-    <section class="catalog-products">
+      <section class="catalog-products">
       <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
@@ -118,6 +117,7 @@
         <button class="button button-reset" type="reset">Сбросить</button>
       </form>
     </section>
+  </section>
     <h2 class="found-hotels">Найдено гостиниц: 38</h2>
     <select class="select-control" aria-label="Сортировка">
       <option value="cheap">Сначала дешевые</option>
@@ -214,7 +214,7 @@
       <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="newsletter-email">email</label>
-        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+        <input class="field field-gray" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
         <button class="button button-additional" type="submit">
           <span>Подписаться</span>
         </button>

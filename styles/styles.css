@@ -23,11 +23,6 @@ body {
   background-color: #ffffff;
 }
 
-.main-header {
-color: #000000;
-background-color: #ffffff;
-}
-
 .navigation-link {
   font-size: 20px;
   font-style: normal;
@@ -41,21 +36,34 @@ background-color: #ffffff;
 }
 
 .visually-hidden {
-  visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
+/*NAVIGATION*/
 .navigation-list {
   list-style: none;
 }
 
 .navigation-search {
-  background: url("../images/icons/navigation/search.svg") 18px no-repeat;
+  background-image: url("../images/icons/navigation/search.svg");
+  background-repeat: no-repeat;
 }
 
 .navigation-select {
-  background: url("../images/icons/navigation/select.svg") 20px no-repeat;
+  background-image: url("../images/icons/navigation/select.svg");
+  background-repeat: no-repeat;
 }
 
+/*BUTTON*/
 .button {
   font-size: 16px;
   font-style: normal;
@@ -87,21 +95,28 @@ background-color: #ffffff;
   background-color: rgba(28,28,28,0);
 }
 
+/*HERO*/
 .hero-logo-group {
-  background: #83B3D333 url("../images/pictures/mountains_hero_background.jpg") no-repeat;
-  background-size: 1200px 485px;
-  width: 1200px;
-  height: 485px;
+  background-color: #83B3D333;
+  background-image: url("../images/pictures/mountains_hero_background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
+/*ADVANTAGES*/
 .advantages-title {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #ffffff;
+  text-align: center;
+}
+
+.advantages-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .advantages-content {
@@ -133,9 +148,21 @@ background-color: #ffffff;
 }
 
 .advantages-item {
-  background-color: rgba(131, 179, 211, 0.20);
+  background-color: rgba(131, 179, 211, 0.2);
 }
-/*цвет должен быть слегка разным, а он одинаковый, или?..*/
+
+.features {
+  text-align: center;
+}
+
+.search {
+  text-align: center;
+}
+
+/*NEWSLETTER*/
+.newsletter {
+  text-align: center;
+}
 
 .newsletter-title {
   font-size: 30px;
@@ -163,31 +190,40 @@ color: #FFFFFF;
 }
 
 .newsletter-background {
-  background: #756157 url("../images/pictures/newsletter_main_background.jpg") no-repeat;
-  background-size: 1200px 415px;
-  width: 1200px;
-  height: 415px;
+  background-color: #756157;
+  background-image: url("../images/pictures/newsletter_main_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
+/*FOOTER*/
 .socials-list {
   list-style: none;
 }
 
-.inner-header {
-  background-color: #756157;
+.contacts-phone {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
-/*как мне сделать один фон и дл шапки, и для фильтров?*/
-
-.catalog-products {
+/*CATALOG*/
+.catalog {
   background-color: #756157;
+  background-image: url("../images/pictures/filter_background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
 }
 
-.inner-header-title {
+.catalog-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-  color: #FFFFFF;
 }
 
 .breadcrumbs {
@@ -195,30 +231,21 @@ color: #FFFFFF;
 }
 
 .breadcrumbs-link-home {
-  background: url("../images/icons/breadcrumbs/breadcrumbs_home.svg") no-repeat;
-  background-size: 12px;
-}
-
-.arrow {
-  background: url(../images/icons/breadcrumbs/breadcrumbs_arrow.svg) no-repeat;
-  background-size: 6px 10px;
+  background-image: url("../images/icons/breadcrumbs/breadcrumbs_home.svg");
+  background-repeat:  no-repeat;
 }
 
 .breadcrumbs-item {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  color: #FFFFFF;
 }
 
 .catalog-filter-title {
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  color: #FFFFFF;
 }
 
 .catalog-filter-list {
@@ -227,10 +254,8 @@ color: #FFFFFF;
 
 .catalog-filter-item {
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 23px;
-  color: #FFFFFF;
 }
 
 .found-hotels {
@@ -246,9 +271,12 @@ color: #FFFFFF;
   list-style: none;
 }
 
+.product-card {
+  color: #333333;
+}
+
 .product-name {
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 28px;
 }
@@ -258,36 +286,25 @@ color: #FFFFFF;
   text-decoration: none;
 }
 
-.product-type {
-  color: #333333;
-}
-
-.product-price {
-  color: #333333;
-}
-
 .rating {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  color: #333333;
   background-color: #F2F2F2;
   }
 
 .classification {
   background: url("../images/icons/star_blue.svg") no-repeat;
-  /*не понимаю, как повторять звездочки нужное количество раз*/
 }
 
+/*PAGINATION*/
 .pagination {
   list-style: none;
 }
 
 .pagination-link {
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
