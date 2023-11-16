@@ -148,6 +148,7 @@ body {
 .hero-logo {
   display: block;
   margin: 0 auto;
+  padding: 50px 370px 80px;
 }
 
 /*ADVANTAGES*/
@@ -328,6 +329,39 @@ color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
+  padding: 35px 70px 70px 70px;
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.catalog-left-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.catalog-right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 70px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .catalog-title {
