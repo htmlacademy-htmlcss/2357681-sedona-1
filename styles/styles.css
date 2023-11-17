@@ -31,6 +31,10 @@ body {
   background-color: #ffffff;
 }
 
+h1 {
+  margin: 0;
+}
+
 .main-index {
   flex-grow: 1;
 }
@@ -296,7 +300,8 @@ color: #FFFFFF;
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
+  padding: 40px 70px 30px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -310,6 +315,7 @@ color: #FFFFFF;
 
 .contacts {
   width: 720px;
+  padding: 5px 195px;
 }
 
 .contacts-phone {
@@ -335,8 +341,8 @@ color: #FFFFFF;
 .catalog-filter {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .catalog-left-side {
@@ -406,6 +412,7 @@ color: #FFFFFF;
 
 .found-hotels-wrapper {
   width: 1060px;
+  padding: 50px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
