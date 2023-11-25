@@ -170,7 +170,13 @@ body {
 
 /*ADVANTAGES*/
 .advantages-title-group {
-  padding: 70px 290px;
+  padding: 70px 0;
+  margin: 0 auto 21px;
+}
+
+.features .advantages-title-group {
+  padding: 64px 0;
+  margin: 0 auto;
 }
 
 .advantages-title {
@@ -180,12 +186,19 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.lower-title {
+  margin-bottom: 20px;
 }
 
 .advantages-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
 }
 
 .advantages-content {
@@ -268,7 +281,11 @@ body {
 
 .search {
   text-align: center;
-  padding: 96px 304px;
+  padding: 96px;
+}
+
+.search-description {
+  margin-bottom: 54px;
 }
 
 /*NEWSLETTER*/
@@ -283,6 +300,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .newsletter-title-white {
@@ -295,6 +314,7 @@ color: #FFFFFF;
   font-weight: 400;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 54px;
 }
 
 .newsletter-description-white {
@@ -306,11 +326,13 @@ color: #FFFFFF;
   background-image: url("../images/pictures/newsletter_main_background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding: 96px 258px;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .newsletter-no-background {
-  padding: 96px 258px;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 /*FOOTER*/
