@@ -218,7 +218,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 85px;
+  padding: 103px 85px;
 }
 
 .advantages-content-image {
@@ -239,6 +239,8 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .advantages-list-title-white {
@@ -247,6 +249,10 @@ body {
 
 .advantages-list-description-white {
   color: #FFFFFF;
+}
+
+.advantages-list-description {
+  margin: 0;
 }
 
 .advantages-item {
@@ -268,7 +274,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 400px;
-  padding: 80px 85px;
+  padding: 80px;
+  gap: 30px;
+}
+
+.advantages-item-picture .advantages-list-title {
+  margin: 0;
 }
 
 .advantages-item-light {
@@ -277,6 +288,10 @@ body {
 
 .features {
   text-align: center;
+}
+
+.advantages-list-image {
+  order: -1;
 }
 
 .search {
