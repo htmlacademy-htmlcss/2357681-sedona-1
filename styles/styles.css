@@ -259,6 +259,7 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -270,6 +271,7 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -368,13 +370,14 @@ color: #FFFFFF;
 .socials-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
 
 .socials-link {
 display: block;
-padding: 0 10px;
+padding: 10px;
 }
 
 .contacts {
@@ -404,6 +407,7 @@ padding: 0 10px;
   background-repeat: no-repeat;
   color: #FFFFFF;
   padding: 35px 70px 70px 70px;
+  margin-bottom: 50px;
 }
 
 .catalog-filter {
@@ -429,7 +433,13 @@ padding: 0 10px;
 .button-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  gap: 32px;
+}
+
+.button-wrapper .button {
+  display: block;
 }
 
 .price-wrapper {
@@ -440,18 +450,23 @@ padding: 0 10px;
 
 .catalog-title {
   margin: 0;
+  margin-bottom: 8px;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
 }
 
 .breadcrumbs {
+  display: flex;
+  width: 115px;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 }
 
-.breadcrumbs-link-home {
+.breadcrumbs-link {
   background-image: url("../images/icons/breadcrumbs/breadcrumbs_home.svg");
   background-repeat:  no-repeat;
 }
@@ -460,6 +475,12 @@ padding: 0 10px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
+  min-width: 13px;
+  min-height: 10px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .catalog-filter-title {
@@ -481,8 +502,8 @@ padding: 0 10px;
 
 .found-hotels-wrapper {
   width: 1060px;
-  padding: 50px 70px;
   display: flex;
+  margin-bottom: 40px;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
@@ -495,6 +516,7 @@ padding: 0 10px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
 }
 
 .select-control {
@@ -502,13 +524,31 @@ padding: 0 10px;
   padding: 14px 20px;
 }
 
+.visual {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.visual .button {
+  display: block;
+  width: 34px;
+  height: 36px;
+  padding: 14px 12px;
+}
+
+.visual .button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .product-list {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 80px;
   padding: 0;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .product-card {
@@ -517,7 +557,6 @@ padding: 0 10px;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
-  margin: 20px;
 }
 
 .product-name {
@@ -547,14 +586,22 @@ padding: 0 10px;
 .pagination {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  margin: 0;
+  margin-bottom: 60px;
+  gap: 8px;
 }
 
 .pagination-item {
-  width: 60px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
 }
 
 .pagination-link {
+  display: block;
+  padding: 12px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
