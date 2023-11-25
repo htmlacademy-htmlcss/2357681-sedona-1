@@ -61,12 +61,21 @@ body {
   margin: 0 auto;
 }
 
+.navigation-left {
+  display: flex;
+  margin-left: 70px;
+}
+
 .navigation-logo {
   margin-right: 30px;
 }
 
 .navigation-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   width: 500px;
@@ -88,6 +97,8 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -97,6 +108,12 @@ body {
   text-align: center;
   color: inherit;
   background-color: inherit;
+}
+
+.navigation-user .navigation-link {
+  min-width: 32px;
+  min-height: 42px;
+  padding: 22px 12px;
 }
 
 /*BUTTON*/
@@ -197,7 +214,7 @@ body {
 }
 
 .advantages-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -311,7 +328,7 @@ color: #FFFFFF;
 }
 
 .socials-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .contacts {
@@ -379,7 +396,7 @@ color: #FFFFFF;
 }
 
 .breadcrumbs {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -403,7 +420,7 @@ color: #FFFFFF;
 }
 
 .catalog-filter-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .catalog-filter-item {
@@ -436,7 +453,7 @@ color: #FFFFFF;
 }
 
 .product-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -478,7 +495,7 @@ color: #FFFFFF;
 
 /*PAGINATION*/
 .pagination {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   align-items: center;
 }
