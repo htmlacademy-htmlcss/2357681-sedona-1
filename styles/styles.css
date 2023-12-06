@@ -129,6 +129,7 @@ body {
 
 .button-base {
   background-color: #756157;
+  text-align: center;
 }
 
 .button-base-big {
@@ -543,34 +544,67 @@ color: #FFFFFF;
 
 .product-card {
   color: #333333;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 20px;
+  display: grid;
+  grid-template-areas:
+  "promo promo"
+  "type price"
+  "button-1 button-2"
+  "stars rating";
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.product-card-image {
+  margin-bottom: 16px;
 }
 
 .product-name {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
 }
 
 .product-card-link {
   color: #000000;
   text-decoration: none;
+  grid-area: promo;
+}
+
+.product-type {
+  grid-area: type;
+}
+
+.product-price {
+  grid-area: price;
+  text-align: right;
+}
+
+.product-card .button-base {
+  grid-area: button-1;
+}
+
+.product-card .button-additional {
+  grid-area: button-2;
+}
+
+.classification {
+  grid-area: stars;
+  background: url("../images/icons/star_blue.svg") no-repeat;
 }
 
 .rating {
+  grid-area: rating;
+  display: block;
+  padding: 9px 22px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   background-color: #F2F2F2;
   }
-
-.classification {
-  background: url("../images/icons/star_blue.svg") no-repeat;
-}
 
 /*PAGINATION*/
 .pagination {
