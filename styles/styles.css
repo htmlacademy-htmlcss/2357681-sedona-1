@@ -521,9 +521,7 @@ color: #FFFFFF;
 }
 
 .visual .button {
-  display: block;
-  width: 34px;
-  height: 36px;
+  display: flex;
   padding: 14px 12px;
 }
 
@@ -546,6 +544,7 @@ color: #FFFFFF;
   color: #333333;
   padding: 20px;
   display: grid;
+  grid-template-columns: repeat(2, 140px);
   grid-template-areas:
   "promo promo"
   "type price"
@@ -557,6 +556,7 @@ color: #FFFFFF;
 
 .product-card-image {
   margin-bottom: 16px;
+  object-fit: contain;
 }
 
 .product-name {
@@ -612,6 +612,7 @@ color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 0;
   margin: 0;
   margin-bottom: 60px;
   gap: 8px;
@@ -669,7 +670,7 @@ color: #FFFFFF;
 }
 
 .socials-link {
-display: block;
+display: flex;
 padding: 10px;
 }
 
@@ -689,5 +690,9 @@ padding: 10px;
 }
 
 .footer-logo-link {
+  display: block;
+}
+
+.logo-academy {
   display: block;
 }
