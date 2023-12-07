@@ -129,6 +129,7 @@ body {
 
 .button-base {
   background-color: #756157;
+  text-align: center;
 }
 
 .button-base-big {
@@ -387,53 +388,6 @@ color: #FFFFFF;
   padding-bottom: 104px;
 }
 
-/*FOOTER*/
-.page-footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1060px;
-  margin: 0 auto;
-  padding: 40px 70px 30px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.socials {
-  width: 142px;
-}
-
-.socials-list {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-}
-
-.socials-link {
-display: block;
-padding: 10px;
-}
-
-.contacts {
-  width: 331px;
-  padding: 5px 195px;
-}
-
-.contacts-phone {
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-}
-
-.footer-logo-link {
-  display: block;
-}
-
 /*CATALOG*/
 .catalog {
   background-color: #756157;
@@ -491,6 +445,24 @@ padding: 10px;
   line-height: 78px;
 }
 
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+/*BREADCRUMBS*/
 .breadcrumbs {
   display: flex;
   width: 115px;
@@ -518,23 +490,6 @@ padding: 10px;
   margin-right: 10px;
 }
 
-.catalog-filter-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
-}
-
-.catalog-filter-list {
-  list-style-type: none;
-}
-
-.catalog-filter-item {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
-}
-
 .found-hotels-wrapper {
   width: 1060px;
   display: flex;
@@ -544,6 +499,7 @@ padding: 10px;
   align-self: stretch;
 }
 
+/*FOUND HOTELS*/
 .found-hotels {
   font-size: 30px;
   font-style: normal;
@@ -565,9 +521,7 @@ padding: 10px;
 }
 
 .visual .button {
-  display: block;
-  width: 34px;
-  height: 36px;
+  display: flex;
   padding: 14px 12px;
 }
 
@@ -575,47 +529,82 @@ padding: 10px;
   margin-right: 8px;
 }
 
+/*PRODUCT LIST*/
 .product-list {
   list-style-type: none;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
 }
 
 .product-card {
   color: #333333;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-areas:
+  "promo promo"
+  "type price"
+  "button-1 button-2"
+  "stars rating";
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.product-card-image {
+  margin-bottom: 16px;
+  object-fit: contain;
 }
 
 .product-name {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
 }
 
 .product-card-link {
   color: #000000;
   text-decoration: none;
+  grid-area: promo;
+}
+
+.product-type {
+  grid-area: type;
+}
+
+.product-price {
+  grid-area: price;
+  text-align: right;
+}
+
+.product-card .button-base {
+  grid-area: button-1;
+}
+
+.product-card .button-additional {
+  grid-area: button-2;
+}
+
+.classification {
+  grid-area: stars;
+  background: url("../images/icons/star_blue.svg") no-repeat;
 }
 
 .rating {
+  grid-area: rating;
+  display: block;
+  padding: 9px 22px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   background-color: #F2F2F2;
   }
-
-.classification {
-  background: url("../images/icons/star_blue.svg") no-repeat;
-}
 
 /*PAGINATION*/
 .pagination {
@@ -623,6 +612,7 @@ padding: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 0;
   margin: 0;
   margin-bottom: 60px;
   gap: 8px;
@@ -654,4 +644,55 @@ padding: 10px;
 .pagination-inactive {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+/*FOOTER*/
+.page-footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 40px 70px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  width: 142px;
+}
+
+.socials-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.socials-link {
+display: flex;
+padding: 10px;
+}
+
+.contacts {
+  width: 331px;
+  padding: 5px 195px;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-logo-link {
+  display: block;
+}
+
+.logo-academy {
+  display: block;
 }
