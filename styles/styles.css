@@ -125,6 +125,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 50px;
+  border-radius: 4px;
 }
 
 .button-base {
@@ -148,6 +153,11 @@ body {
 .button-reset {
   background-color: rgba(28,28,28,0);
 }
+
+.product-card .button {
+  padding: 8px;
+}
+/*вот с этими кнопками какая-то хрень*/
 
 /*MAIN PAGE*/
 .page-container {
@@ -634,6 +644,7 @@ color: #FFFFFF;
   color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .pagination-current {
