@@ -507,6 +507,14 @@ color: #FFFFFF;
   line-height: 23px;
 }
 
+.control:hover {
+  opacity: 60%;
+}
+
+control:active {
+  opacity: 30%;
+}
+
 /*BREADCRUMBS*/
 .breadcrumbs {
   display: flex;
