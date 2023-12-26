@@ -361,6 +361,36 @@ body {
   order: -1;
 }
 
+.advantages-content-text .advantages-list-title {
+  position: relative;
+}
+
+.advantages-content-text .advantages-list-title::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #FFFFFF;
+  opacity: 30%;
+  bottom: -30px;
+  left: 55px;
+}
+
+.advantages-item .advantages-list-title {
+  position: relative;
+}
+
+.advantages-item .advantages-list-title:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #000000;
+  opacity: 30%;
+  bottom: -30px;
+  left: 55px;
+}
+
 /*SEARCH*/
 .search {
   display: flex;
