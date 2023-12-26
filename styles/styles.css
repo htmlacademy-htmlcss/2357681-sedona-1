@@ -209,6 +209,7 @@ body {
   padding: 50px 370px 80px;
 }
 
+
 /*ADVANTAGES*/
 .advantages {
   display: flex;
@@ -511,12 +512,20 @@ color: #FFFFFF;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  gap: 10px;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-home {
+  display: block;
+  min-width: 13px;
+  min-height: 15px;
   background-image: url("../images/icons/breadcrumbs/breadcrumbs_home.svg");
-  background-repeat:  no-repeat;
+  background-repeat: no-repeat;
+  background-size: 13px 15px;
+  background-position: center;
 }
+
+/*но почему домик выше остальных - это уже вопрос*/
 
 .breadcrumbs-item {
   font-size: 16px;
@@ -526,8 +535,11 @@ color: #FFFFFF;
   min-height: 10px;
 }
 
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 10px;
+.arrow {
+  background-image: url("../images/icons/breadcrumbs/breadcrumbs_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 7px 10px;
+  background-position: center;
 }
 
 .found-hotels-wrapper {
