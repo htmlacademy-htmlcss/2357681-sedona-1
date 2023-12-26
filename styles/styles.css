@@ -555,6 +555,14 @@ color: #FFFFFF;
   align-self: stretch;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-link:active {
+  opacity: 30%;
+}
+
 /*FOUND HOTELS*/
 .found-hotels {
   font-size: 30px;
