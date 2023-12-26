@@ -746,6 +746,19 @@ padding: 10px;
   color: #000000;
 }
 
+.contacts-phone:hover {
+  color:#756157;
+}
+
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: #756157;
+  opacity: 30%;
+}
+
 .footer-logo-link {
   display: block;
 }
