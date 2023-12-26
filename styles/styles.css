@@ -86,16 +86,6 @@ body {
   margin-left: auto;
 }
 
-.navigation-search {
-  background-image: url("../images/icons/navigation/search.svg");
-  background-repeat: no-repeat;
-}
-
-.navigation-select {
-  background-image: url("../images/icons/navigation/select.svg");
-  background-repeat: no-repeat;
-}
-
 .navigation-link {
   display: block;
   padding: 20px 16px;
@@ -111,9 +101,42 @@ body {
 }
 
 .navigation-user .navigation-link {
-  min-width: 32px;
-  min-height: 42px;
+  width: 20px;
+  height: 20px;
   padding: 22px 12px;
+}
+
+.navigation-user .navigation-item:nth-child(2) {
+  margin-right: 20px;
+}
+
+.navigation-search {
+  background-image: url("../images/icons/navigation/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.navigation-select {
+  background-image: url("../images/icons/navigation/select.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  position: relative;
+}
+
+.select-amount {
+  display: block;
+  position: absolute;
+  right: 4px;
+  top: 11px;
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  padding: 5px;
+  color: #FFFFFF;
+
 }
 
 /*BUTTON*/
@@ -153,6 +176,13 @@ body {
 .button-reset {
   background-color: rgba(28,28,28,0);
 }
+
+.navigation-item .button {
+  width: 160px;
+  padding: 8px;
+}
+
+/*эта кнопка тоже по размерам как в макете, но что-то странное с паддингами*/
 
 .product-card .button {
   padding: 8px;
