@@ -781,6 +781,19 @@ display: flex;
 padding: 10px;
 }
 
+.socials-link:hover .socials-icon {
+  fill:#68A2CA;
+}
+
+.socials-link:focus .socials-icon {
+  fill:#68A2CA;
+}
+
+.socials-link:active .socials-icon {
+  fill:#68A2CA;
+  opacity: 30%;
+}
+
 .contacts {
   width: 331px;
   padding: 5px 195px;
@@ -815,4 +828,16 @@ padding: 10px;
 
 .logo-academy {
   display: block;
+}
+
+.footer-logo-link:hover .logo-academy {
+  fill: #756157;
+}
+.footer-logo-link:focus .logo-academy {
+  fill: #756157;
+}
+
+.footer-logo-link:active .logo-academy {
+  fill: #756157;
+  opacity: 30%;
 }
