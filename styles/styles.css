@@ -743,6 +743,19 @@ control:active {
   border-radius: 4px;
 }
 
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #68A2CA;
+  opacity: 30%;
+}
+
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
