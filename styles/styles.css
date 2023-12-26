@@ -577,6 +577,26 @@ color: #FFFFFF;
 .select-control {
   width: 290px;
   padding: 14px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  opacity: 30%;
 }
 
 .visual {
