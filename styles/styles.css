@@ -667,6 +667,7 @@ control:active {
 
 /*PRODUCT LIST*/
 .product-list {
+  position: relative;
   list-style-type: none;
   margin: 0;
   margin-bottom: 80px;
@@ -674,6 +675,16 @@ control:active {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
+}
+
+.product-list:before {
+  content: "";
+  position: absolute;
+  width: 1060px;
+  height: 1px;
+  background-color: #E6E6E6;
+  bottom: -30px;
+
 }
 
 .product-card {
