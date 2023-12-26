@@ -761,9 +761,41 @@ control:active {
   background-color: #F2F2F2;
 }
 
+.pagination-current:hover {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-current:focus {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-current:active {
+  color: #000000;
+  background-color: #F2F2F2;
+  opacity: 1;
+}
+
 .pagination-inactive {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.pagination-inactive:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.pagination-inactive:focus {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.pagination-inactive:active {
+  color: #000000;
+  background-color: #FFFFFF;
+  opacity: 1;
 }
 
 /*FOOTER*/
