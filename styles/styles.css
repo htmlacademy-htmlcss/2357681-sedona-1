@@ -674,7 +674,7 @@ color: #FFFFFF;
 .arrow {
   background-image: url("../images/icons/breadcrumbs/breadcrumbs_arrow.svg");
   background-repeat: no-repeat;
-  background-size: 7px 10px;
+  background-size: 10px 10px;
   background-position: center;
 }
 
