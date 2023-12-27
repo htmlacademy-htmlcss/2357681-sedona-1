@@ -294,6 +294,13 @@ body {
   background-image: url("../images/pictures/mountains_hero_background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-logo-group svg {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
 }
 
 .hero-logo {
