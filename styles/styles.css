@@ -627,6 +627,7 @@ control:active {
   display: flex;
   width: 115px;
   justify-content: space-between;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -634,17 +635,14 @@ control:active {
   gap: 10px;
 }
 
-.breadcrumbs-home {
+.breadcrumbs-home-link {
   display: block;
-  min-width: 13px;
+  min-width: 15px;
   min-height: 15px;
   background-image: url("../images/icons/breadcrumbs/breadcrumbs_home.svg");
   background-repeat: no-repeat;
-  background-size: 13px 15px;
-  background-position: center;
+  background-size: cover;
 }
-
-/*но почему домик выше остальных - это уже вопрос*/
 
 .breadcrumbs-item {
   font-size: 16px;
