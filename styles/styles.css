@@ -100,6 +100,18 @@ body {
   background-color: inherit;
 }
 
+.navigation-link:hover {
+  opacity: 60%;
+}
+
+.navigation-link:focus {
+  opacity: 60%;
+}
+
+.navigation-link:active {
+  opacity: 30%;
+}
+
 .navigation-link-current {
   position: relative;
 }
@@ -150,7 +162,6 @@ body {
   border-radius: 10px;
   padding: 5px;
   color: #FFFFFF;
-
 }
 
 /*BUTTON*/
