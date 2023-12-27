@@ -104,6 +104,15 @@ body {
   border-bottom: 2px solid #756257;
 }
 
+.navigation-item-left .navigation-link:focus {
+  border-bottom: 2px solid #756257;
+}
+
+.navigation-item-left .navigation-link:focus {
+  border-bottom: 2px solid #756257;
+  opacity: 60%;
+}
+
 .navigation-user .navigation-link {
   width: 20px;
   height: 20px;
@@ -164,6 +173,23 @@ body {
   text-align: center;
 }
 
+.button-base:hover {
+  background-color: #615048;
+}
+
+.button-base:focus {
+  background-color: #615048;
+}
+
+.button-base:active {
+  background-color: #756157;
+  color: rgb(255,255,255,0.3);
+}
+
+.button-base:disabled {
+  background-color: #E5E5E5;
+}
+
 .button-base-big {
   font-size: 20px;
   line-height: 36px;
@@ -173,12 +199,62 @@ body {
   background-color: #82B3D3;
 }
 
+.button-additional:hover {
+  background-color: #68A2CA;
+}
+
+.button-additional:focus {
+  background-color: #68A2CA;
+}
+
+.button-additional:active {
+  background-color: #82B3D3;
+  color: rgb(255,255,255,0.3);
+}
+
+.button-additional:disabled {
+  background-color: #E5E5E5;
+}
+
 .active {
   background-color: #7DB54F;
 }
 
+.active:hover {
+  background-color: #6C9E42;
+}
+
+.active:focus {
+  background-color: #6C9E42;
+}
+
+.active:active {
+  background-color: #7DB54F;
+  color: rgb(255,255,255,0.3);
+}
+
+.active:disabled {
+  background-color: #E5E5E5;
+}
+
 .button-reset {
   background-color: rgba(28,28,28,0);
+}
+
+.button-reset:hover {
+  opacity: 60%;
+}
+
+.button-reset:focus {
+  border: 3px solid #83B3D3;
+}
+
+.button-reset:active {
+  opacity: 30%;
+}
+
+.button-reset:disabled {
+  opacity: 10%;
 }
 
 .navigation-item .button {
@@ -684,7 +760,6 @@ control:active {
   height: 1px;
   background-color: #E6E6E6;
   bottom: -30px;
-
 }
 
 .product-card {
