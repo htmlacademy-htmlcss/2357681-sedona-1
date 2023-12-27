@@ -247,6 +247,7 @@ body {
 
 .button-reset:focus {
   border: 3px solid #83B3D3;
+  outline: none;
 }
 
 .button-reset:active {
@@ -660,15 +661,6 @@ control:active {
   background-position: center;
 }
 
-.found-hotels-wrapper {
-  width: 1060px;
-  display: flex;
-  margin-bottom: 40px;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-
 .breadcrumbs-link:hover {
   opacity: 60%;
 }
@@ -678,7 +670,18 @@ control:active {
 }
 
 /*FOUND HOTELS*/
+.found-hotels-wrapper {
+  width: 1060px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .found-hotels {
+  display: block;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -686,15 +689,28 @@ control:active {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  margin-right: auto;
+}
+
+.select-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 70px;
 }
 
 .select-control {
-  width: 290px;
-  padding: 14px 20px;
+  width: 100%;
+  padding: 12px 20px;
+  padding-right: 40px;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+  background-image: url(../images/icons/arrow_down.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .select-control:hover {
@@ -703,6 +719,7 @@ control:active {
 
 .select-control:focus {
   border: 2px solid #68A2CA;
+  outline: none;
 }
 
 .select-control:active {
@@ -714,8 +731,10 @@ control:active {
 }
 
 .visual {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .visual .button {
@@ -731,6 +750,7 @@ control:active {
 
 .visual .button:focus {
   border: 2px solid #68A2CA;
+  outline: none;
 }
 
 .visual .button:active {
@@ -743,10 +763,13 @@ control:active {
 
 /*PRODUCT LIST*/
 .product-list {
+  width: 1060px;
   position: relative;
   list-style-type: none;
   margin: 0;
   margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -774,6 +797,8 @@ control:active {
   "stars rating";
   row-gap: 16px;
   column-gap: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .product-card-image {
@@ -836,6 +861,7 @@ control:active {
   align-items: center;
   padding: 0;
   margin: 0;
+  margin-left: 70px;
   margin-bottom: 60px;
   gap: 8px;
 }
