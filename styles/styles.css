@@ -637,7 +637,7 @@ color: #FFFFFF;
   opacity: 60%;
 }
 
-control:active {
+.control:active {
   opacity: 30%;
 }
 
