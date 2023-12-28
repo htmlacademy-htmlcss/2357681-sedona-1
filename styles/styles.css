@@ -853,18 +853,36 @@ color: #FFFFFF;
 
 .classification {
   grid-area: stars;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
-.classification-stars {
-  display: block;
-  width: 18px;
-  height: 18px;
+.classification-four-stars {
   background-image: url(../images/icons/star_blue.svg);
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
+  background-repeat: space;
+  background-size: contain;
+  height: 20px;
+  width: 90px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.classification-three-stars {
+  background-image: url(../images/icons/star_blue.svg);
+  background-repeat: space;
+  background-size: contain;
+  height: 20px;
+  width: 70px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.classification-two-stars {
+  background-image: url(../images/icons/star_blue.svg);
+  background-repeat: space;
+  background-size: contain;
+  height: 20px;
+  width: 50px;
+  margin-top: 10px;
+  background-color: transparent;
 }
 
 .rating {
