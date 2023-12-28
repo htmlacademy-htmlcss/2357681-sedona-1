@@ -659,6 +659,13 @@ color: #FFFFFF;
   background-image: url("../images/icons/breadcrumbs/breadcrumbs_home.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  left: 25px;
+  top: 3px;
 }
 
 .breadcrumbs-item {
@@ -669,18 +676,11 @@ color: #FFFFFF;
   min-height: 10px;
 }
 
-.arrow {
-  background-image: url("../images/icons/breadcrumbs/breadcrumbs_arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 10px 10px;
-  background-position: center;
-}
-
-.breadcrumbs-link:hover {
+.breadcrumbs-home-link:hover {
   opacity: 60%;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-home-link:active {
   opacity: 30%;
 }
 
