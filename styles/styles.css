@@ -638,6 +638,24 @@ color: #FFFFFF;
 
 .control {
   cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-mark-round {
+  border-radius: 50%;
+}
+
+.control-label {
+  padding-left: 32px;
 }
 
 .catalog-filter-item {
