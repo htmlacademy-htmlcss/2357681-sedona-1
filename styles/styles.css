@@ -658,6 +658,23 @@ color: #FFFFFF;
   padding-left: 32px;
 }
 
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: url(/images/icons/tick.svg);
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(63, 94, 114, 1);
+  left: 5px;
+  top: 5px;
+}
+
+
+
 .catalog-filter-item {
   font-size: 18px;
   font-weight: 400;
@@ -672,8 +689,16 @@ color: #FFFFFF;
   opacity: 60%;
 }
 
+.control:focus .control-mark {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
 .control:active {
   opacity: 30%;
+}
+
+.control:active .control-mark {
+  box-shadow: 0 0 0 2px #83B3D3;
 }
 
 .price-inputs {
@@ -689,8 +714,17 @@ color: #FFFFFF;
   line-height: 24px;
   font-weight: 700;
   text-align: start;
-  border: none;
+  border: 3px solid rgba(0, 0, 0, 0);
   appearance: textfield;
+}
+
+.range-input:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.range-input:active {
+  border: 3px solid #000;
 }
 
 .range-input-left {
