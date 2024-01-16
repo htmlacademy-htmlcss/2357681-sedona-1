@@ -71,6 +71,13 @@ body {
   margin-right: 30px;
 }
 
+.header-logo {
+  position: relative;
+  display: block;
+  margin-bottom: -4px;
+  z-index: 1;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -122,7 +129,7 @@ body {
   content: "";
   right: 16px;
   left: 16px;
-  bottom: -5px;
+  bottom: -1px;
   height: 2px;
   background-color: #756257;
 }
