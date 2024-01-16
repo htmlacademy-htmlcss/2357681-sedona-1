@@ -887,6 +887,7 @@ border-bottom-left-radius: 4px;
 }
 
 .found-hotels {
+  width: 100%;
   display: block;
   font-size: 30px;
   font-style: normal;
@@ -899,16 +900,16 @@ border-bottom-left-radius: 4px;
 }
 
 .select-wrapper {
+  width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   gap: 70px;
 }
 
 .select-control {
-  width: 100%;
   padding: 12px 20px;
-  padding-right: 40px;
+  padding-right: 100px;
+  font-family: PT Sans;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #E5E5E5;
@@ -937,7 +938,6 @@ border-bottom-left-radius: 4px;
 }
 
 .visual {
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
