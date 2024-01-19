@@ -1430,6 +1430,10 @@ padding: 10px;
   padding-right: 10px;
 }
 
+.count {
+  display: flex;
+}
+
 .count input {
   width: 20px;
   background-color: #F2F2F2;
@@ -1518,7 +1522,7 @@ padding: 10px;
   background-color: #333333;
   white-space: wrap;
   border-radius: 10px;
-  top: 30px;
+  top: 50px;
   right: -95px;
   display: none;
 }
