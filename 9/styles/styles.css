@@ -690,7 +690,7 @@ color: #FFFFFF;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
-  content: url(/images/icons/tick.svg);
+  content: url("../images/icons/tick.svg");
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
@@ -722,7 +722,7 @@ color: #FFFFFF;
   opacity: 30%;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
@@ -799,9 +799,13 @@ border-bottom-left-radius: 4px;
 
 .range-bar {
   position: absolute;
+  left: 0;
+  width: 226px;
   height: 4px;
   background-color: rgba(255, 255, 255, 1);
 }
+
+
 
 .range-toggle {
   position: absolute;
@@ -915,7 +919,7 @@ border-bottom-left-radius: 4px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
-  background-image: url(../images/icons/arrow_down.svg);
+  background-image: url("../images/icons/arrow_down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -1047,7 +1051,7 @@ border-bottom-left-radius: 4px;
 }
 
 .classification-four-stars {
-  background-image: url(../images/icons/star_blue.svg);
+  background-image: url("../images/icons/star_blue.svg");
   background-repeat: space;
   background-size: contain;
   height: 20px;
@@ -1057,7 +1061,7 @@ border-bottom-left-radius: 4px;
 }
 
 .classification-three-stars {
-  background-image: url(../images/icons/star_blue.svg);
+  background-image: url("../images/icons/star_blue.svg");
   background-repeat: space;
   background-size: contain;
   height: 20px;
@@ -1067,7 +1071,7 @@ border-bottom-left-radius: 4px;
 }
 
 .classification-two-stars {
-  background-image: url(../images/icons/star_blue.svg);
+  background-image: url("../images/icons/star_blue.svg");
   background-repeat: space;
   background-size: contain;
   height: 20px;
@@ -1297,7 +1301,7 @@ padding: 10px;
   padding: 0;
   border-radius: 50%;
   background-color: #F2F2F2;
-  background-image: url(/images/icons/modal_cross.svg);
+  background-image: url("../images/icons/modal_cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -1387,7 +1391,7 @@ padding: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  background-image: url(/images/icons/calendar.svg);
+  background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
   background-position: 365px;
 }
@@ -1424,6 +1428,10 @@ padding: 10px;
 .children {
   display: block;
   padding-right: 10px;
+}
+
+.count {
+  display: flex;
 }
 
 .count input {
@@ -1514,13 +1522,13 @@ padding: 10px;
   background-color: #333333;
   white-space: wrap;
   border-radius: 10px;
-  top: 30px;
+  top: 50px;
   right: -95px;
   display: none;
 }
 
 .tooltip-text::before {
-  content: url(/images/icons/triangle.svg);
+  content: url("../images/icons/triangle.svg");
   width: 20px;
   height: 10px;
   position: absolute;
