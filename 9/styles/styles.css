@@ -690,7 +690,7 @@ color: #FFFFFF;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
-  content: url("../images/icons/tick.svg");
+  content: url("../images/icons/form_tick.svg");
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
