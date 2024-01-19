@@ -65,20 +65,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -88,20 +91,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="hotel" checked>
-                      Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="house-type" value="hotel" checked>
+                      <span class="control-mark control-mark-round"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="motel">
-                      Мотель
+                      <input class="visually-hidden control-input" type="radio" name="house-type" value="motel">
+                      <span class="control-mark control-mark-round"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="apartaments">
-                      Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="house-type" value="apartaments">
+                      <span class="control-mark control-mark-round"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -109,15 +115,24 @@
             </div>
             <div class="catalog-right-side">
               <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="price-wrapper">
-                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="price">
-                    <input type="number" name="price-min" min="0" max="9000" value="0" required>от
-                  </label>
-                  <label class="price">
-                    <input type="number" name="price-max" min="0" max="9000" value="9000" required>до
-                  </label>
-                  <input class="range" type="range" min="0" max="9000" step="500" value="4500">
+                  <div class="price-inputs">
+                    <label class="price">
+                      <input class="range-input range-input-left" type="number" placeholder="от" name="price-min" min="0" max="9000" value="0" required>
+                      <span>от</span>
+                    </label>
+                    <label class="price">
+                      <input class="range-input range-input-right" type="number" name="price-max" min="0" max="9000" value="9000" required>
+                      <span>до</span>
+                    </label>
+                  </div>
+                  <div class="price-range">
+                    <div class="range-bar">
+                      <button type="button" class="range-toggle toggle-min" aria-label="Минимальная цена"></button>
+                      <button type="button" class="range-toggle toggle-max" aria-label="Максимальная цена"></button>
+                    </div>
+                  </div>
                 </div>
               </fieldset>
               <div class="button-wrapper">
@@ -140,15 +155,15 @@
           <h2 class="visually-hidden">Выбор внешнего вида списка.</h2>
           <a href="#" class="button">
             <span class="visually-hidden">Показать плиткой.</span>
-            <img src="images/icons/list/list_tile.svg" width="24" height="20" alt="Показать плиткой.">
+            <img src="images/icons/list/list_tile.svg" width="22" height="18" alt="Показать плиткой.">
           </a>
           <a href="#" class="button">
             <span class="visually-hidden">Показать слайдами.</span>
-            <img src="images/icons/list/list_slideshow.svg" width="24" height="20" alt="Показать слайдами.">
+            <img src="images/icons/list/list_slideshow.svg" width="22" height="18" alt="Показать слайдами.">
           </a>
           <a href="#" class="button">
             <span class="visually-hidden">Показать списком.</span>
-            <img src="images/icons/list/list_list.svg" width="24" height="20" alt="Показать списком.">
+            <img src="images/icons/list/list_list.svg" width="22" height="18" alt="Показать списком.">
           </a>
         </section>
       </div>
@@ -240,7 +255,7 @@
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">email.</label>
-          <input class="field field-gray" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button button-additional" type="submit">
             <span>Подписаться</span>
           </button>
