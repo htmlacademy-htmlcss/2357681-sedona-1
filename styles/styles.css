@@ -660,6 +660,11 @@ color: #FFFFFF;
   padding: 0;
 }
 
+.catalog-filter-group:disabled .range-bar {
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
@@ -738,6 +743,14 @@ color: #FFFFFF;
   box-shadow: 0 0 0 2px #83B3D3;
 }
 
+.control-input:disabled + .control-mark + .control-label {
+  opacity: 20%;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .price-inputs {
   display: flex;
   margin-bottom: 46px;
@@ -766,6 +779,10 @@ color: #FFFFFF;
 
 .range-input:not(:placeholder-shown) {
   outline: 3px solid #000;
+}
+
+.range-input:disabled {
+  opacity: 20%;
 }
 
 .range-input-left {
