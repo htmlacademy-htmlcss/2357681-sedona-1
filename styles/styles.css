@@ -209,6 +209,7 @@ body {
 
 .button-base:disabled {
   background-color: #E5E5E5;
+  cursor: default;
 }
 
 .button-base-big {
@@ -235,6 +236,7 @@ body {
 
 .button-additional:disabled {
   background-color: #E5E5E5;
+  cursor: default;
 }
 
 .active {
@@ -256,6 +258,7 @@ body {
 
 .active:disabled {
   background-color: #E5E5E5;
+  cursor: default;
 }
 
 .button-reset {
@@ -275,8 +278,9 @@ body {
   opacity: 30%;
 }
 
-.button-reset:disabled {
+.button-reset:sbled {
   opacity: 10%;
+  cursor: default;
 }
 
 .navigation-item .button {
@@ -586,7 +590,10 @@ color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
+}
 
+.field:disabled {
+  opacity: 30%;
 }
 
 /*CATALOG*/
@@ -744,18 +751,21 @@ color: #FFFFFF;
   line-height: 24px;
   font-weight: 700;
   text-align: start;
-  border: 3px solid rgba(0, 0, 0, 0);
   appearance: textfield;
   background-color: #F2F2F2;
+  border: none;
+}
+
+.range-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 1);
 }
 
 .range-input:focus {
-  border: 3px solid #83B3D3;
-  outline: none;
+  outline: 3px solid #83B3D3;
 }
 
-.range-input:active {
-  border: 3px solid #000;
+.range-input:not(:placeholder-shown) {
+  outline: 3px solid #000;
 }
 
 .range-input-left {
@@ -806,8 +816,6 @@ border-bottom-left-radius: 4px;
   background-color: rgba(255, 255, 255, 1);
 }
 
-
-
 .range-toggle {
   position: absolute;
   width: 20px;
@@ -822,7 +830,7 @@ border-bottom-left-radius: 4px;
 }
 
 .range-toggle:focus,
-.range-toggle:active {
+.range-toggle:active{
   border: 2px solid #000000;
 }
 
@@ -1269,6 +1277,7 @@ padding: 10px;
   opacity: 30%;
 }
 
+/*MODAL*/
 .modal-container {
   position: fixed;
   z-index: 2;
@@ -1332,7 +1341,6 @@ padding: 10px;
   text-transform: uppercase;
   margin-right: 130px;
 }
-
 
 .modal-form label {
   display: flex;
