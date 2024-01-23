@@ -200,6 +200,7 @@ body {
 
 .button-base:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .button-base:active {
@@ -227,6 +228,7 @@ body {
 
 .button-additional:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .button-additional:active {
@@ -249,6 +251,7 @@ body {
 
 .active:focus {
   background-color: #6C9E42;
+  outline: none;
 }
 
 .active:active {
@@ -270,15 +273,14 @@ body {
 }
 
 .button-reset:focus {
-  border: 3px solid #83B3D3;
-  outline: none;
+  outline: 3px solid #83B3D3;
 }
 
 .button-reset:active {
   opacity: 30%;
 }
 
-.button-reset:sbled {
+.button-reset:disabled {
   opacity: 10%;
   cursor: default;
 }
