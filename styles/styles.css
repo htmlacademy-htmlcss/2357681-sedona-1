@@ -109,15 +109,27 @@ body {
 }
 
 .navigation-link:hover {
-  opacity: 60%;
+  color: rgba(130, 179, 211, 1);
+}
+
+.navigation-link:hover svg{
+  fill: rgba(130, 179, 211, 1);
 }
 
 .navigation-link:focus {
-  opacity: 60%;
+  color:rgba(130, 179, 211, 1);
+}
+
+.navigation-link:focus svg{
+  fill: rgba(130, 179, 211, 1);
 }
 
 .navigation-link:active {
-  opacity: 30%;
+  color:rgba(130, 179, 211, 0.6);
+}
+
+.navigation-link:active svg{
+  fill: rgba(130, 179, 211, 0.6);
 }
 
 .navigation-link-current {
@@ -144,18 +156,7 @@ body {
   margin-right: 20px;
 }
 
-.navigation-search {
-  background-image: url("../images/icons/navigation/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
-}
-
 .navigation-select {
-  background-image: url("../images/icons/navigation/select.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
   position: relative;
 }
 
