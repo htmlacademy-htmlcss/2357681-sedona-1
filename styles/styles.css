@@ -662,7 +662,6 @@ color: #FFFFFF;
 
 .catalog-filter-group:disabled .range-bar {
   background-color: rgba(255, 255, 255, 0.2);
-
 }
 
 .catalog-filter-title {
@@ -773,11 +772,17 @@ color: #FFFFFF;
   color: rgba(0, 0, 0, 1);
 }
 
+.range-input:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
 .range-input:focus {
+  background-color: rgba(230, 230, 230, 1);
   outline: 3px solid #83B3D3;
 }
 
 .range-input:not(:placeholder-shown) {
+  background-color: rgba(242, 242, 242, 1);
   outline: 3px solid #000;
 }
 
@@ -843,12 +848,12 @@ border-bottom-left-radius: 4px;
 }
 
 .range-toggle:hover {
-  border: 2px solid #a0a0a0;
+  outline: 2px solid #a0a0a0;
 }
 
 .range-toggle:focus,
 .range-toggle:active{
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .toggle-min {
@@ -1341,13 +1346,12 @@ padding: 10px;
 
 .modal-close-button:focus {
   background-color: #E6E6E6;
-  border: 2px solid #83B3D3;
-  outline: none;
+  outline: 2px solid #83B3D3;
 }
 
 .modal-close-button:active {
   opacity: 0.6;
-  border: none;
+  outline: none;
 }
 
 .modal-title {
@@ -1422,6 +1426,24 @@ padding: 10px;
   background-position: 365px;
 }
 
+.date input:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.date input:focus {
+  background-color: rgba(230, 230, 230, 1);
+  outline: 3px solid #83B3D3;
+}
+
+.date input:not(:placeholder-shown) {
+  background-color: rgba(230, 230, 230, 1);
+  outline: 3px solid #000000;
+}
+
+.date input:disabled {
+  opacity: 20%;
+}
+
 .date-error {
   display: block;
   position: absolute;
@@ -1464,7 +1486,6 @@ padding: 10px;
   width: 20px;
   background-color: #F2F2F2;
   border: none;
-  border-radius: 4px;
   text-align: center;
   font-family: PT Sans;
   font-size: 18px;
@@ -1477,6 +1498,18 @@ padding: 10px;
 .count input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.count input:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+.count input:focus {
+  background-color: rgba(230, 230, 230, 1);
+  outline: none;
+}
+
+.count input:disabled {
+  opacity: 20%;
 }
 
 .count-button {
@@ -1503,10 +1536,22 @@ padding: 10px;
   box-shadow: 0 0 0 3px rgba(130, 179, 211, 1);
 }
 
+.count-button:focus {
+  outline: none;
+}
 .count-button:active svg {
   opacity: 0.3;
   box-shadow: none;
 }
+
+.count-button:disabled {
+  cursor: default;
+}
+
+.count-button:disabled svg {
+  opacity: 10%;
+}
+
 
 .minus {
   border-top-left-radius: 4px;
