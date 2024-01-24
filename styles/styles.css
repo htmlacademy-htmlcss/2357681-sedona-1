@@ -789,6 +789,10 @@ color: #FFFFFF;
   outline: 3px solid #83B3D3;
 }
 
+.range-input:active {
+    background-color: rgba(230, 230, 230, 1);
+}
+
 .range-input:not(:placeholder-shown) {
   background-color: rgba(242, 242, 242, 1);
   outline: 3px solid #000;
@@ -1312,6 +1316,7 @@ padding: 10px;
 .footer-logo-link:hover .logo-academy {
   fill: #756157;
 }
+
 .footer-logo-link:focus .logo-academy {
   fill: #756157;
 }
@@ -1457,6 +1462,10 @@ padding: 10px;
   outline: 3px solid #83B3D3;
 }
 
+.date-input:active {
+  background-color: rgba(230, 230, 230, 1);
+}
+
 .date input:not(:placeholder-shown) {
   background-color: rgba(230, 230, 230, 1);
   outline: 3px solid #000000;
@@ -1525,9 +1534,14 @@ padding: 10px;
 .count input:hover {
   background-color: rgba(230, 230, 230, 1);
 }
+
 .count input:focus {
   background-color: rgba(230, 230, 230, 1);
   outline: none;
+}
+
+.count input:active {
+  background-color: rgba(230, 230, 230, 1);
 }
 
 .count input:disabled {
@@ -1561,6 +1575,7 @@ padding: 10px;
 .count-button:focus {
   outline: none;
 }
+
 .count-button:active svg {
   opacity: 0.3;
   box-shadow: none;
