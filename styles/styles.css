@@ -876,14 +876,25 @@ border-bottom-left-radius: 4px;
 /*BREADCRUMBS*/
 .breadcrumbs {
   display: flex;
-  width: 115px;
-  justify-content: space-between;
   align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-  gap: 10px;
+  gap: 28px;
+}
+
+.breadcrumbs:not(:last-child) {
+  position: relative;
+}
+
+.breadcrumbs:not(:last-child)::after {
+  content: url("../images/icons/breadcrumbs/breadcrumbs_arrow.svg");
+  width: 8px;
+  height: 11px;
+  position: absolute;
+  left: 25px;
+  top: 1px;
 }
 
 .breadcrumbs-home-link {
@@ -893,13 +904,6 @@ border-bottom-left-radius: 4px;
   background-image: url("../images/icons/breadcrumbs/breadcrumbs_home.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-}
-
-.arrow {
-  position: absolute;
-  left: 25px;
-  top: 3px;
 }
 
 .breadcrumbs-item {
@@ -910,12 +914,22 @@ border-bottom-left-radius: 4px;
   min-height: 10px;
 }
 
-.breadcrumbs-home-link:hover {
+.breadcrumbs-link:hover {
   opacity: 60%;
 }
 
-.breadcrumbs-home-link:active {
+.breadcrumbs-link:focus {
+  opacity: 60%;
+}
+
+.breadcrumbs-link:active {
   opacity: 30%;
+}
+
+.breadcrumbs-current-link:hover,
+.breadcrumbs-current-link:focus,
+.breadcrumbs-current-link:active {
+  opacity: 1;
 }
 
 /*FOUND HOTELS*/
