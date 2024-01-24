@@ -18,6 +18,12 @@ html {
   height: 100%;
 }
 
+.grey-background {
+  width: 1280px;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -26,7 +32,6 @@ body {
   line-height: 21px;
   font-style: normal;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .container {
@@ -36,6 +41,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 0 10px 0 #CFCFCFCF;
+  background-color: #ffffff;
 }
 
 .main-container {
