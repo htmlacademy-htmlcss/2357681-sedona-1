@@ -971,7 +971,7 @@ color: #ffffff;
 
 .found-hotels {
   display: block;
-  width: 100%;
+  min-width: 338px;
   margin: 0;
   margin-right: auto;
   font-size: 30px;
@@ -985,10 +985,12 @@ color: #ffffff;
 .select-wrapper {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 70px;
 }
 
 .select-control {
+  max-width: 295px;
   padding: 12px 20px;
   padding-right: 105px;
   font-family: PT Sans;
