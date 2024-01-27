@@ -183,6 +183,7 @@ body {
 .button {
   display: inline-block;
   padding: 8px 50px;
+  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -225,6 +226,8 @@ body {
 }
 
 .button-additional {
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82b3d3;
 }
 
@@ -511,10 +514,13 @@ body {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  width: 592px;
   padding: 96px 0;
   margin: 0 auto;
   text-align: center;
+}
+
+.search-title {
+  margin-bottom: 20px;
 }
 
 .search-description {
@@ -574,7 +580,7 @@ color: #ffffff;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 96px;
+  padding-top: 100px;
   padding-bottom: 104px;
 }
 
@@ -589,7 +595,7 @@ color: #ffffff;
 
 .field {
   width: 410px;
-  padding: 12px 20px;
+  padding: 14px 20px;
   font-family: PT Sans;
   font-size: 18px;
   line-height: 24px;
