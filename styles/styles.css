@@ -976,12 +976,11 @@ color: #ffffff;
   display: flex;
   align-items: flex-start;
   gap: 70px;
-  width: 100%;
 }
 
 .select-control {
   padding: 12px 20px;
-  padding-right: 100px;
+  padding-right: 105px;
   font-family: PT Sans;
   font-size: 18px;
   line-height: 21px;
