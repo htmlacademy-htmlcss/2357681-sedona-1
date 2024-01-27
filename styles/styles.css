@@ -226,11 +226,13 @@ body {
 }
 
 .button-additional {
-  font-size: 20px;
-  line-height: 36px;
   background-color: #82b3d3;
 }
 
+.newsletter-form .button-additional {
+  font-size: 20px;
+  line-height: 36px;
+}
 .button-additional:hover {
   background-color: #68a2ca;
 }
@@ -767,7 +769,7 @@ color: #ffffff;
 .price-inputs {
   display: flex;
   gap: 2px;
-  margin-bottom: 46px;
+  margin-bottom: 42px;
 }
 
 .range-input {
@@ -851,7 +853,7 @@ color: #ffffff;
 .range-bar {
   position: absolute;
   left: 0;
-  width: 226px;
+  width: 220px;
   height: 4px;
   background-color: #ffffff;
 }
@@ -880,7 +882,7 @@ color: #ffffff;
 
 .toggle-max {
   top: -8px;
-  left: 226px;
+  left: 205px;
 }
 
 /*BREADCRUMBS*/
