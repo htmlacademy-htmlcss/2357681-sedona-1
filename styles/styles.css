@@ -1354,18 +1354,30 @@ padding: 12px;
 }
 
 .modal-search {
-  position: relative;
   margin: auto;
-  padding: 64px 70px;
+  padding: 60px 75px 64px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
+.modal-top-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 45px;
+}
+
+.modal-title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
 .modal-close-button {
-  position: relative;
-  top: -40px;
-  right: -540px;
   width: 52px;
   height: 52px;
   padding: 0;
@@ -1392,15 +1404,6 @@ padding: 12px;
   outline: none;
 }
 
-.modal-title {
-  margin: 0;
-  margin-right: 130px;
-  padding: 0;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
 .modal-form label {
   display: flex;
   align-items: center;
@@ -1410,7 +1413,7 @@ padding: 12px;
   display: grid;
   grid-template-columns: repeat(2,247px);
   grid-template-rows: repeat(3, 48px) 60px;
-  column-gap: 48px;
+  column-gap: 88px;
   row-gap: 48px;
   font-size: 20px;
   font-weight: 700;
@@ -1449,8 +1452,12 @@ padding: 12px;
   padding-right: 18px;
 }
 
+.date {
+  position: relative;
+}
+
 .date input {
-  width: 440px;
+  width: 100%;
   padding: 12px 20px;
   font-family: PT Sans;
   font-size: 18px;
@@ -1459,9 +1466,33 @@ padding: 12px;
   background-color: #f2f2f2;
   background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
-  background-position: 365px;
+  background-position: 405px;
   border: none;
   border-radius: 4px;
+}
+
+.date-error {
+  position: absolute;
+  left: 160px;
+  bottom: -23px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: none;
+  color: #ff5757;
+}
+
+.date-free {
+  position: absolute;
+  left: 160px;
+  bottom: -23px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: none;
+  color: #000000;
 }
 
 .date input:hover {
@@ -1484,30 +1515,6 @@ padding: 12px;
 
 .date input:disabled {
   opacity: 20%;
-}
-
-.date-error {
-  position: absolute;
-  top: 200px;
-  right: 155px;
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: none;
-  color: #ff5757;
-}
-
-.date-free {
-  position: absolute;
-  top: 295px;
-  right: 110px;
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: none;
-  color: #000000;
 }
 
 .adults {
@@ -1617,12 +1624,14 @@ padding: 12px;
 }
 
 .tooltip-toggle {
+  position: relative;
   display: block;
   margin: 0;
   padding: 0;
   background-color: transparent;
   border: none;
 }
+
 
 .tooltip-toggle:hover .tooltip-icon {
   fill: #68a2ca;
@@ -1631,7 +1640,7 @@ padding: 12px;
 .tooltip-text {
   position: absolute;
   top: 50px;
-  right: -95px;
+  right: -72px;
   display: none;
   width: 216px;
   padding: 15px 18px 18px 22px;
@@ -1648,7 +1657,7 @@ padding: 12px;
 .tooltip-text::before {
   position: absolute;
   top: -15px;
-  right: 141px;
+  right: 120px;
   width: 20px;
   height: 10px;
   content: url("../images/icons/triangle.svg");
@@ -1657,4 +1666,9 @@ padding: 12px;
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+.modal-form .button-additional {
+  font-size: 20px;
+  line-height: 24px;
 }
