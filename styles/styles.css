@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -62,7 +62,7 @@ body {
     overflow: hidden;
 }
 
-/*NAVIGATION*/
+/* NAVIGATION */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -181,11 +181,11 @@ body {
   border-radius: 10px;
 }
 
-/*BUTTON*/
+/* BUTTON */
 .button {
   display: inline-block;
   padding: 8px 50px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -235,6 +235,7 @@ body {
   font-size: 20px;
   line-height: 36px;
 }
+
 .button-additional:hover {
   background-color: #68a2ca;
 }
@@ -282,7 +283,7 @@ body {
 }
 
 .button-reset:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .button-reset:focus {
@@ -290,11 +291,11 @@ body {
 }
 
 .button-reset:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .button-reset:disabled {
-  opacity: 10%;
+  opacity: 0.1;
   cursor: default;
 }
 
@@ -307,13 +308,13 @@ body {
   padding: 8px;
 }
 
-/*MAIN PAGE*/
+/* MAIN PAGE */
 .page-container {
   width: 1200px;
   margin: 0 auto;
 }
 
-/*HERO*/
+/* HERO */
 .hero-logo-group {
   position: relative;
   background-color: #83b3d333;
@@ -335,7 +336,7 @@ body {
 }
 
 
-/*ADVANTAGES*/
+/* ADVANTAGES */
 .advantages {
   display: flex;
   flex-direction: column;
@@ -504,14 +505,14 @@ body {
   bottom: -30px;
   left: 55px;
   background-color: #ffffff;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .advantages-item .advantages-list-title {
   position: relative;
 }
 
-.advantages-item .advantages-list-title:before {
+.advantages-item .advantages-list-title::before {
   position: absolute;
   content: "";
   width: 60px;
@@ -519,10 +520,10 @@ body {
   bottom: -30px;
   left: 55px;
   background-color: #000000;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
-/*SEARCH*/
+/* SEARCH */
 .search {
   display: flex;
   flex-direction: column;
@@ -541,7 +542,7 @@ body {
   margin-bottom: 54px;
 }
 
-/*NEWSLETTER*/
+/* NEWSLETTER */
 .newsletter {
   text-align: center;
 }
@@ -609,7 +610,7 @@ color: #ffffff;
 .field {
   width: 410px;
   padding: 14px 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
@@ -620,13 +621,13 @@ color: #ffffff;
 }
 
 .field:disabled {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
-/*CATALOG*/
+/* CATALOG */
 .catalog {
   margin-bottom: 50px;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 70px;
   color: #ffffff;
   background-color: #756157;
   background-image: url("../images/pictures/filter_background.jpg");
@@ -756,11 +757,11 @@ color: #ffffff;
 }
 
 .control:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .control:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .control-input:focus + .control-mark {
@@ -772,7 +773,7 @@ color: #ffffff;
 }
 
 .control-input:disabled + .control-mark + .control-label {
-  opacity: 20%;
+  opacity: 0.2;
 }
 
 .control-input:disabled + .control-mark {
@@ -830,7 +831,7 @@ color: #ffffff;
 }
 
 .range-input:disabled {
-  opacity: 20%;
+  opacity: 0.2;
 }
 
 .range-input-left {
@@ -908,7 +909,7 @@ color: #ffffff;
   left: 205px;
 }
 
-/*BREADCRUMBS*/
+/* BREADCRUMBS */
 .breadcrumbs {
   display: flex;
   align-items: center;
@@ -939,15 +940,15 @@ color: #ffffff;
 }
 
 .breadcrumbs-link:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .breadcrumbs-link:focus {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .breadcrumbs-link:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .breadcrumbs-home-link {
@@ -973,7 +974,7 @@ color: #ffffff;
   line-height: 21px;
 }
 
-/*FOUND HOTELS*/
+/* FOUND HOTELS */
 .found-hotels-wrapper {
   display: flex;
   align-items: center;
@@ -1008,7 +1009,7 @@ color: #ffffff;
   max-width: 295px;
   padding: 12px 20px;
   padding-right: 105px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #E5E5E5;
@@ -1033,7 +1034,7 @@ color: #ffffff;
 }
 
 .select-control:disabled {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .visual {
@@ -1067,7 +1068,7 @@ color: #ffffff;
   margin-right: 8px;
 }
 
-/*PRODUCT LIST*/
+/* PRODUCT LIST */
 .product-list {
   position: relative;
   display: grid;
@@ -1082,7 +1083,7 @@ color: #ffffff;
   list-style-type: none;
 }
 
-.product-list:before {
+.product-list::before {
   position: absolute;
   width: 1060px;
   height: 1px;
@@ -1188,7 +1189,7 @@ color: #ffffff;
   background-color: #f2f2f2;
   }
 
-/*PAGINATION*/
+/* PAGINATION */
 .pagination {
   display: flex;
   flex-wrap: wrap;
@@ -1275,7 +1276,7 @@ color: #ffffff;
   opacity: 1;
 }
 
-/*FOOTER*/
+/* FOOTER */
 .page-footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -1313,7 +1314,7 @@ padding: 12px;
 
 .socials-link:active .socials-icon {
   fill:#68a2ca;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .contacts {
@@ -1342,7 +1343,7 @@ padding: 12px;
 
 .contacts-phone:active {
   color: #756157;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .footer-logo-link {
@@ -1363,10 +1364,10 @@ padding: 12px;
 
 .footer-logo-link:active .logo-academy {
   fill: #756157;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
-/*MODAL*/
+/* MODAL */
 .modal-container {
   position: fixed;
   z-index: 2;
@@ -1495,7 +1496,7 @@ padding: 12px;
   width: 100%;
   max-width: 440px;
   padding: 12px 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1555,7 +1556,7 @@ padding: 12px;
 }
 
 .date input:disabled {
-  opacity: 20%;
+  opacity: 0.2;
 }
 
 .adults {
@@ -1576,7 +1577,7 @@ padding: 12px;
   min-width: 11px;
   padding: 14px 10px;
   text-align: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -1604,7 +1605,7 @@ padding: 12px;
 }
 
 .count input:disabled {
-  opacity: 20%;
+  opacity: 0.2;
 }
 
 .count-button {
@@ -1644,7 +1645,7 @@ padding: 12px;
 }
 
 .count-button:disabled svg {
-  opacity: 10%;
+  opacity: 0.1;
 }
 
 .minus {
