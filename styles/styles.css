@@ -1304,11 +1304,12 @@ padding: 12px;
 }
 
 .contacts {
-  max-width: 331px;
   padding: 5px 195px;
 }
 
 .contacts-phone {
+  display: flex;
+  max-width: 340px;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -1316,7 +1317,6 @@ padding: 12px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  white-space: nowrap;
 }
 
 .contacts-phone:hover {
