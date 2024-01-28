@@ -633,13 +633,16 @@ color: #ffffff;
 .catalog-left-side {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 70px;
+  margin-right: 20px;
 }
 
 .catalog-right-side {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 70px;
 }
 
@@ -1457,11 +1460,13 @@ padding: 12px;
 
 .date-check-in span {
   display: block;
+  max-width: 115px;
   padding-right: 24px;
 }
 
 .date-check-out span {
   display: block;
+  max-width: 115px;
   padding-right: 18px;
 }
 
@@ -1471,6 +1476,7 @@ padding: 12px;
 
 .date input {
   width: 100%;
+  max-width: 440px;
   padding: 12px 20px;
   font-family: PT Sans;
   font-size: 18px;
