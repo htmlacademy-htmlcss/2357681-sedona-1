@@ -1384,17 +1384,18 @@ padding: 12px;
 
 .modal-search {
   margin: auto;
-  padding: 60px 75px 64px 70px;
+  padding: 75px 70px 64px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
 .modal-top-group {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 45px;
+  margin-bottom: 64px;
 }
 
 .modal-title {
@@ -1407,6 +1408,9 @@ padding: 12px;
 }
 
 .modal-close-button {
+  position: absolute;
+  right: -17px;
+  top: 0;
   width: 52px;
   height: 52px;
   padding: 0;
@@ -1480,7 +1484,7 @@ padding: 12px;
 .date-check-out span {
   display: block;
   max-width: 115px;
-  padding-right: 18px;
+  padding-right: 24px;
 }
 
 .date {
@@ -1564,7 +1568,7 @@ padding: 12px;
 }
 
 .count input {
-  width: 20px;
+  min-width: 11px;
   padding: 14px 10px;
   text-align: center;
   font-family: PT Sans;
@@ -1600,7 +1604,6 @@ padding: 12px;
 
 .count-button {
   display: block;
-  padding: 14px 10px;
   cursor: pointer;
   border: none;
 }
@@ -1640,11 +1643,13 @@ padding: 12px;
 }
 
 .minus {
+  padding: 14px 10px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
 .plus {
+  padding: 14px 12px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -1703,4 +1708,5 @@ padding: 12px;
 .modal-form .button-additional {
   font-size: 20px;
   line-height: 24px;
+  border-radius: 10px;
 }
