@@ -1517,6 +1517,11 @@ padding: 12px;
   line-height: 21px;
   text-transform: none;
   color: #ff5757;
+  visibility: hidden;
+}
+
+.date-error-showed {
+  visibility: visible;
 }
 
 .date-free {
