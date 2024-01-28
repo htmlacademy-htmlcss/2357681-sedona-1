@@ -902,6 +902,7 @@ color: #ffffff;
 .breadcrumbs {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 28px;
   margin: 0;
   padding: 0;
@@ -910,13 +911,14 @@ color: #ffffff;
 }
 
 .breadcrumbs-link {
+  display: flex;
   position: relative;
 }
 
 .breadcrumbs-link::after {
   position: absolute;
-  left: 170%;
-  top: -15%;
+  right: -18px;
+  bottom: 10px;
   width: 8px;
   height: 11px;
   content: url("../images/icons/breadcrumbs/breadcrumbs_arrow.svg");
@@ -939,12 +941,12 @@ color: #ffffff;
 }
 
 .breadcrumbs-home-link {
-  display: block;
+  display: flex;
   min-width: 15px;
-  min-height: 15px;
+  min-height: 21px;
   background-image: url("../images/icons/breadcrumbs/breadcrumbs_home.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 0 3px;
 }
 
 .breadcrumbs-current-link:hover,
@@ -1028,6 +1030,7 @@ color: #ffffff;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .visual .button {
