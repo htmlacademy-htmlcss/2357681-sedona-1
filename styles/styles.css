@@ -33,6 +33,7 @@ body {
   line-height: 21px;
   font-style: normal;
   color: #000000;
+  background-color: #f2f2f2
 }
 
 .container {
@@ -1396,6 +1397,7 @@ padding: 12px;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  overflow: scroll;
 }
 
 .modal-container-closed {
@@ -1403,8 +1405,9 @@ padding: 12px;
 }
 
 .modal-search {
+  max-width: 582px;
   margin: auto;
-  padding: 75px 70px 64px 70px;
+  padding: 70px 64px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -1420,6 +1423,7 @@ padding: 12px;
 
 .modal-title {
   display: block;
+  max-width: 420px;
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -1463,55 +1467,27 @@ padding: 12px;
 }
 
 .modal-form {
-  display: grid;
-  grid-template-columns: repeat(2,247px);
-  grid-template-rows: repeat(3, 48px) 60px;
-  column-gap: 88px;
-  row-gap: 48px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 48px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  white-space: nowrap;
-}
-
-.date-check-in {
-  grid-column: 1 / 3;
-}
-
-.date-check-out {
-  grid-column: 1 / 3;
-}
-
-.adults-count {
-  grid-column: 1 / 2;
-}
-
-.children-count {
-  grid-column: 2 / 3;
-}
-
-.modal-form .button {
-  grid-column: 1 / 3;
-}
-
-.date-check-in span {
-  display: block;
-  max-width: 115px;
-  padding-right: 24px;
-}
-
-.date-check-out span {
-  display: block;
-  max-width: 115px;
-  padding-right: 24px;
 }
 
 .date {
   position: relative;
+  display: flex;
 }
 
-.date input {
+.date-title {
+  min-width: 119px;
+  padding-right: 24px;
+}
+
+.date-input {
   width: 100%;
   max-width: 440px;
   padding: 12px 20px;
@@ -1522,7 +1498,7 @@ padding: 12px;
   background-color: #f2f2f2;
   background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
-  background-position: 405px;
+  background-position: 395px;
   border: none;
   border-radius: 4px;
 }
@@ -1554,13 +1530,18 @@ padding: 12px;
   line-height: 21px;
   text-transform: none;
   color: #000000;
+  visibility: hidden;
 }
 
-.date input:hover {
+.date-free-showed {
+  visibility: visible;
+}
+
+.date-input:hover {
   background-color: #e6e6e6;
 }
 
-.date input:focus {
+.date-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
@@ -1569,13 +1550,19 @@ padding: 12px;
   background-color: #e6e6e6;
 }
 
-.date input:not(:placeholder-shown) {
+.date-input:not(:placeholder-shown) {
   background-color: #e6e6e6;
   outline: 3px solid #000000;
 }
 
-.date input:disabled {
+.date-input:disabled {
   opacity: 0.2;
+}
+
+.form-count {
+  display: flex;
+  justify-content: space-between;
+  gap: 88px;
 }
 
 .adults {
@@ -1593,7 +1580,9 @@ padding: 12px;
 }
 
 .count input {
+  width: 100%;
   min-width: 11px;
+  max-height: 22px;
   padding: 14px 10px;
   text-align: center;
   font-family: "PT Sans", sans-serif;
@@ -1669,13 +1658,15 @@ padding: 12px;
 }
 
 .minus {
+  max-height: 50px;
   padding: 14px 10px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
 .plus {
-  padding: 14px 12px;
+  max-height: 50px;
+  padding: 14px 10px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -1732,6 +1723,8 @@ padding: 12px;
 }
 
 .modal-form .button-additional {
+  padding-top: 18px;
+  padding-bottom: 18px;
   font-size: 20px;
   line-height: 24px;
   border-radius: 10px;
