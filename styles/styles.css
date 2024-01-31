@@ -225,6 +225,7 @@ body {
 }
 
 .button-base-big {
+  max-width: 380px;
   font-size: 20px;
   line-height: 36px;
 }
