@@ -1079,6 +1079,7 @@ color: #ffffff;
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 340px);
+  align-items: start;
   gap: 20px;
   width: 1060px;
   margin: 0;
