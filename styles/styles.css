@@ -234,11 +234,6 @@ body {
   background-color: #82b3d3;
 }
 
-.newsletter-form .button-additional {
-  font-size: 20px;
-  line-height: 36px;
-}
-
 .button-additional:hover {
   background-color: #68a2ca;
 }
@@ -610,6 +605,8 @@ color: #ffffff;
 }
 
 .newsletter-form .button-additional {
+  font-size: 20px;
+  line-height: 36px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
