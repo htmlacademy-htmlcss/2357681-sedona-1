@@ -605,6 +605,7 @@ color: #ffffff;
 }
 
 .newsletter-form .button-additional {
+  max-width: 240px;
   font-size: 20px;
   line-height: 36px;
   border-top-left-radius: 0;
@@ -985,7 +986,6 @@ color: #ffffff;
 /* FOUND HOTELS */
 .found-hotels-wrapper {
   display: flex;
-  align-items: center;
   width: 1060px;
   margin-bottom: 40px;
   margin-left: auto;
@@ -994,7 +994,7 @@ color: #ffffff;
 
 .found-hotels {
   display: block;
-  max-width: 338px;
+  min-width: 338px;
   margin: 0;
   margin-right: 200px;
   font-size: 30px;
@@ -1008,7 +1008,6 @@ color: #ffffff;
 .select-wrapper {
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: 70px;
 }
 
@@ -1051,6 +1050,8 @@ color: #ffffff;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  gap: 8px;
+  max-width: 170px;
 }
 
 .visual .button {
@@ -1071,10 +1072,6 @@ color: #ffffff;
 
 .visual .button:active {
   border: 2px solid #000000;
-}
-
-.visual .button:not(:last-child) {
-  margin-right: 8px;
 }
 
 /* PRODUCT LIST */
@@ -1507,6 +1504,7 @@ padding: 12px;
   border-radius: 4px;
 }
 
+
 .date-error {
   position: absolute;
   left: 160px;
@@ -1691,7 +1689,6 @@ padding: 12px;
   background-color: transparent;
   border: none;
 }
-
 
 .tooltip-toggle:hover .tooltip-icon {
   fill: #68a2ca;
