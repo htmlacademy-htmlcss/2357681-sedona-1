@@ -985,7 +985,6 @@ color: #ffffff;
 .found-hotels-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 1060px;
   margin-bottom: 40px;
   margin-left: auto;
@@ -994,9 +993,9 @@ color: #ffffff;
 
 .found-hotels {
   display: block;
-  min-width: 338px;
+  max-width: 338px;
   margin: 0;
-  margin-right: 190px;
+  margin-right: 200px;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1055,7 +1054,7 @@ color: #ffffff;
 
 .visual .button {
   display: flex;
-  padding: 14px 12px;
+  padding: 16px 14px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
