@@ -43,7 +43,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 10px 0 #cfcfcfcf;
+  box-shadow: 0 0 10px 0 rgba(207, 207, 207, 1);
 }
 
 .main-container {
