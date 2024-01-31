@@ -303,8 +303,8 @@ body {
 }
 
 .navigation-item .button {
-  width: 160px;
-  padding: 8px;
+  max-width: 150px;
+  padding: 8px 34px;
 }
 
 .product-card .button {
