@@ -381,6 +381,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #333333;
 }
 
 .advantages-content {
@@ -431,16 +432,17 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-list-description {
+  margin: 0;
+  color:#333333;
+}
+
 .advantages-list-title-white {
   color: #ffffff;
 }
 
 .advantages-list-description-white {
   color: #ffffff;
-}
-
-.advantages-list-description {
-  margin: 0;
 }
 
 .advantages-item {
@@ -544,6 +546,7 @@ body {
 
 .search-description {
   margin-bottom: 54px;
+  color:#333333;
 }
 
 /* NEWSLETTER */
@@ -793,6 +796,7 @@ color: #ffffff;
 .range-input {
   width: 103px;
   padding: 12px 20px;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
