@@ -849,9 +849,10 @@ color: #ffffff;
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  margin: 0;
   -webkit-appearance: none;
           appearance: none;
-  margin: 0;
+  -moz-appearance: textfield;
 }
 
 .price {
@@ -1023,6 +1024,7 @@ color: #ffffff;
   background-image: url("../images/icons/arrow_down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: transparent;
 }
 
 .select-control:hover {
@@ -1591,6 +1593,7 @@ padding: 12px;
   line-height: 20px;
   background-color: #f2f2f2;
   border: none;
+  -moz-appearance: textfield;
 }
 
 .count input::-webkit-outer-spin-button,
@@ -1621,6 +1624,7 @@ padding: 12px;
   display: block;
   cursor: pointer;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .count-button svg {
