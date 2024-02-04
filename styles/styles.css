@@ -702,7 +702,7 @@ color: #ffffff;
 
 .catalog-title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -752,7 +752,7 @@ color: #ffffff;
 }
 
 .control-label {
-  padding-left: 32px;
+  padding-left: 36px;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1006,6 +1006,7 @@ color: #ffffff;
 .found-hotels-wrapper {
   display: flex;
   width: 1060px;
+  align-items: center;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -1015,7 +1016,7 @@ color: #ffffff;
   display: block;
   min-width: 338px;
   margin: 0;
-  margin-right: 197px;
+  margin-right: 198px;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1075,7 +1076,7 @@ color: #ffffff;
 
 .visual .button {
   display: flex;
-  padding: 16px 14px;
+  padding: 22px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -1091,6 +1092,27 @@ color: #ffffff;
 
 .visual .button:active {
   border: 2px solid #000000;
+}
+
+.button-tile {
+  background-image: url("../images/icons/list/list_tile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 18px;
+}
+
+.button-slideshow {
+  background-image: url("../images/icons/list/list_slideshow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 18px;
+}
+
+.button-list {
+  background-image: url("../images/icons/list/list_list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 18px;
 }
 
 /* PRODUCT LIST */
