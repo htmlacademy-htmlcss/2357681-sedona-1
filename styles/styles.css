@@ -1003,7 +1003,7 @@ color: #ffffff;
 .found-hotels-wrapper {
   display: flex;
   width: 1060px;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -1011,9 +1011,9 @@ color: #ffffff;
 
 .found-hotels {
   display: block;
-  min-width: 338px;
+  width: 343px;
   margin: 0;
-  margin-right: 198px;
+  margin-right: 193px;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
