@@ -410,7 +410,6 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -444,7 +443,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 230px;
   padding: 113px 85px;
@@ -463,11 +461,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 30px;
   width: 230px;
   padding: 80px 85px;
+  padding-top: 182px;
   text-align: center;
 }
 
@@ -481,6 +479,24 @@ body {
 
 .advantages-item-picture .advantages-list-title {
   margin: 0;
+}
+
+.advantages-item-picture-house {
+  background-image: url("../images/icons/advantages/house.svg");
+  background-repeat: no-repeat;
+  background-position: 162px 80px;
+}
+
+.advantages-item-picture-food {
+  background-image: url("../images/icons/advantages/food.svg");
+  background-repeat: no-repeat;
+  background-position: 162px 80px;
+}
+
+.advantages-item-picture-souvenirs {
+  background-image: url("../images/icons/advantages/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 167px 80px;
 }
 
 .features {
@@ -530,7 +546,7 @@ body {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding: 96px 0;
+  padding: 100px 0 96px 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -540,7 +556,7 @@ body {
 }
 
 .search-description {
-  margin-bottom: 54px;
+  margin-bottom: 52px;
   color:#333333;
 }
 
@@ -584,8 +600,8 @@ color: #ffffff;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 105px;
   background-color: #756157;
   background-image: url("../images/pictures/newsletter_main_background.jpg");
   background-size: cover;
@@ -683,7 +699,7 @@ color: #ffffff;
 
 .catalog-title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -733,7 +749,7 @@ color: #ffffff;
 }
 
 .control-label {
-  padding-left: 32px;
+  padding-left: 36px;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -987,6 +1003,7 @@ color: #ffffff;
 .found-hotels-wrapper {
   display: flex;
   width: 1060px;
+  align-items: baseline;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -994,9 +1011,9 @@ color: #ffffff;
 
 .found-hotels {
   display: block;
-  min-width: 338px;
+  width: 343px;
   margin: 0;
-  margin-right: 200px;
+  margin-right: 193px;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1056,7 +1073,7 @@ color: #ffffff;
 
 .visual .button {
   display: flex;
-  padding: 16px 14px;
+  padding: 22px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -1074,12 +1091,32 @@ color: #ffffff;
   border: 2px solid #000000;
 }
 
+.button-tile {
+  background-image: url("../images/icons/list/list_tile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 18px;
+}
+
+.button-slideshow {
+  background-image: url("../images/icons/list/list_slideshow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 18px;
+}
+
+.button-list {
+  background-image: url("../images/icons/list/list_list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 18px;
+}
+
 /* PRODUCT LIST */
 .product-list {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  align-items: start;
   gap: 20px;
   width: 1060px;
   margin: 0;
@@ -1094,12 +1131,17 @@ color: #ffffff;
   position: absolute;
   width: 1060px;
   height: 1px;
-  bottom: -30px;
+  bottom: -40px;
   content: "";
   background-color: #e6e6e6;
 }
 
 .product-card {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.product-card-wrap {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-template-areas:
@@ -1111,12 +1153,10 @@ color: #ffffff;
   column-gap: 20px;
   padding: 20px;
   color: #333333;
-  border: 1px solid #E6E6E6;
-  border-radius: 4px;
 }
 
 .product-card-image {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   object-fit: contain;
 }
 
@@ -1220,7 +1260,7 @@ color: #ffffff;
   margin: 0;
   padding: 0;
   margin-left: 70px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   list-style-type: none;
 }
 
@@ -1324,6 +1364,10 @@ color: #ffffff;
 .socials-link {
 display: flex;
 padding: 12px;
+}
+
+.socials-link-telegram {
+  padding: 12px 14px;
 }
 
 .socials-link:hover .socials-icon {
